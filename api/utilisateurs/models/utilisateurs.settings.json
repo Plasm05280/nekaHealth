@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "utilisateurs",
+  "info": {
+    "name": "utilisateurs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Nom": {
+      "type": "string"
+    },
+    "Prenom": {
+      "type": "string"
+    },
+    "Telephone": {
+      "type": "biginteger"
+    },
+    "Password": {
+      "type": "password"
+    }
+  }
+}

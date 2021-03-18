@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "structures",
+  "info": {
+    "name": "Structures",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "categorie": {
+      "type": "enumeration",
+      "enum": [
+        "Labo",
+        "SSR",
+        "Clinic"
+      ]
+    },
+    "communes": {
+      "collection": "commune",
+      "via": "structure"
+    },
+    "quartiers": {
+      "collection": "quartier",
+      "via": "structure"
+    },
+    "Services": {
+      "type": "component",
+      "repeatable": true,
+      "component": "services.price"
+    },
+    "Logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "cover": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "map": {
+      "type": "string"
+    }
+  }
+}

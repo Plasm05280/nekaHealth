@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_prix_prices",
+  "info": {
+    "name": "Service",
+    "icon": "address-card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "services": {
+      "collection": "services"
+    },
+    "prix": {
+      "type": "biginteger"
+    }
+  }
+}
