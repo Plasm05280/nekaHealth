@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "avis",
+  "info": {
+    "name": "Avis",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}

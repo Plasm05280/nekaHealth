@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_time_hours",
+  "info": {
+    "name": "hour",
+    "icon": "business-time"
+  },
+  "options": {},
+  "attributes": {
+    "open_hour": {
+      "type": "time"
+    }
+  }
+}

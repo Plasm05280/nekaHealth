@@ -22,14 +22,6 @@
         "Clinic"
       ]
     },
-    "communes": {
-      "collection": "commune",
-      "via": "structure"
-    },
-    "quartiers": {
-      "collection": "quartier",
-      "via": "structure"
-    },
     "Services": {
       "type": "component",
       "repeatable": true,
@@ -62,6 +54,20 @@
     },
     "map": {
       "type": "string"
+    },
+    "open_hour": {
+      "type": "string"
+    },
+    "close_hour": {
+      "type": "string"
+    },
+    "quartiers": {
+      "via": "structures",
+      "collection": "quartier"
+    },
+    "communes": {
+      "via": "structures",
+      "collection": "commune"
     }
   }
 }

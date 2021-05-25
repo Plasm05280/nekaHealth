@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "quartiers",
   "info": {
-    "name": "Quartier"
+    "name": "Quartier",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -13,13 +14,15 @@
     "name": {
       "type": "string"
     },
-    "commune": {
+    "communes": {
       "via": "quartiers",
-      "model": "commune"
+      "collection": "commune",
+      "dominant": true
     },
-    "structure": {
+    "structures": {
+      "collection": "structures",
       "via": "quartiers",
-      "model": "structures"
+      "dominant": true
     }
   }
 }

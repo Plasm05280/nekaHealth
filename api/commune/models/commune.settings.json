@@ -14,13 +14,14 @@
     "name": {
       "type": "string"
     },
+    "structures": {
+      "collection": "structures",
+      "via": "communes",
+      "dominant": true
+    },
     "quartiers": {
       "collection": "quartier",
-      "via": "commune"
-    },
-    "structure": {
-      "via": "communes",
-      "model": "structures"
+      "via": "communes"
     }
   }
 }

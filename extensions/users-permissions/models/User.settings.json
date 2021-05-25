@@ -67,6 +67,16 @@
     },
     "Telephone": {
       "type": "biginteger"
+    },
+    "Gender": {
+      "type": "enumeration",
+      "enum": [
+        "Male",
+        "Female"
+      ]
+    },
+    "Quartier": {
+      "type": "string"
     }
   }
 }
