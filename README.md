@@ -1,4 +1,11 @@
 # Neka Health Backend
 
 Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Install MongoDB on your machine
+Clone this repository
+Run npm install in the root directory
+Start the server with npm start
+Visit http://localhost:1337/admin to access the admin panel
+
+Creating Content Types
+In the admin panel, navigate to Content-Types Builder to create new content types. You can define the fields for each content type, as well as set relationships between types.
